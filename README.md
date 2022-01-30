@@ -12,6 +12,6 @@ and you can also find the ducky encoder here https://github.com/hak5darren/USB-R
 (only works for windows 10)
 
 # Used Repository Links
-https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payload---WIN10-Disable-Windows-Defender \n
-https://github.com/makozort/Quick-Reverse-Powershell-Rubber-Ducky \n
-https://github.com/nejcpirecnik/Chrome-Artemis \n
+https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payload---WIN10-Disable-Windows-Defender               
+https://github.com/makozort/Quick-Reverse-Powershell-Rubber-Ducky                        
+https://github.com/nejcpirecnik/Chrome-Artemis             
